@@ -1,2 +1,7 @@
 export { default as Nav } from './Nav/Nav'
 export { default as Main } from './Main/Main'
+export { default as OurFood } from './OurFood/OurFood'
+export { default as Gallery } from './Gallery/Gallery'
+export { default as Blog } from './Blog/Blog'
+export { default as Order } from './Order/Order'
+export { default as Location } from './Location/Location'
