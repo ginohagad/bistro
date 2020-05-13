@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './Nav.module.css'
 import { makeStyles } from '@material-ui/core/styles'
-import { Tabs, Tab, AppBar, Toolbar, Typography, Button, IconButton, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList } from '@material-ui/core'
+import { Hidden, Tabs, Tab, AppBar, Toolbar, Typography, Button, IconButton, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
+import RestaurantIcon from '@material-ui/icons/Restaurant';
 
 
 
@@ -16,9 +17,16 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
+		textTransform: 'uppercase',
 	},
 	paper: {
 		marginRight: theme.spacing(2),
+	},
+	logo: {
+		marginRight: theme.spacing(1),
+		padding: 4,
+		backgroundColor: 'red',
+		borderRadius: 25,
 	},
 }))
 
@@ -86,7 +94,7 @@ const Nav = () => {
 											<MenuItem onClick={handleClose} to='our-food' component={Link}>Our Food</MenuItem>
 											<MenuItem onClick={handleClose}	to='gallery'component={Link}>Gallery</MenuItem>
 											<MenuItem onClick={handleClose}	to='blog' component={Link}>Blog</MenuItem>
-											<MenuItem onClick={handleClose}	to='order' compnent={Link}>Order Now</MenuItem>
+											<MenuItem onClick={handleClose}	to='order' component={Link}>Order Now</MenuItem>
 											<MenuItem onClick={handleClose}	to='location' component={Link}>Location</MenuItem>
 										</MenuList>
 									</ClickAwayListener>
@@ -94,6 +102,7 @@ const Nav = () => {
 							</Grow>
 						)}
 					</Popper>
+					<RestaurantIcon className={classes.logo} />
 					<Typography variant="h6" className={classes.title}>Bistro</Typography>
 					<Tabs>
 						<Tab label='Home' to='/' component={Link} />} />
