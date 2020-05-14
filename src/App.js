@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Nav, Main, OurFood, Gallery, Blog, Order, Location } from './components'
-import Image from './img/resto-main2.jpg'
+import { Nav, Home, OurFood, Gallery, Blog, Order, Location } from './components'
+import Image from './img/background.jpg'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import styles from './App.module.css'
@@ -16,7 +16,7 @@ class App extends Component {
 
 					<Switch>
 						<Route exact path="/">
-							<Main />
+							<Home />
 						</Route>
 						<Route path="/our-food">
 							<OurFood />

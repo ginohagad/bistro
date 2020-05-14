@@ -1,0 +1,25 @@
+.container {
+  background: #eee;
+  height: 40vh;
+}
+.center {
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .boxes {
+    display: block;
+  }
+}

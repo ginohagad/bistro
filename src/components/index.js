@@ -1,5 +1,5 @@
 export { default as Nav } from './Nav/Nav'
-export { default as Main } from './Main/Main'
+export { default as Home } from './Home/Home'
 export { default as OurFood } from './OurFood/OurFood'
 export { default as Gallery } from './Gallery/Gallery'
 export { default as Blog } from './Blog/Blog'

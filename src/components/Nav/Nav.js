@@ -22,6 +22,12 @@ const useStyles = makeStyles((theme) => ({
 	paper: {
 		marginRight: theme.spacing(2),
 	},
+	tab: {
+		'&:hover': {
+			color: 'red',
+			transition: 'color 0.2s ease-in-out',
+		},
+	},
 	logo: {
 		marginRight: theme.spacing(1),
 		padding: 4,
@@ -105,12 +111,12 @@ const Nav = () => {
 					<RestaurantIcon className={classes.logo} />
 					<Typography variant="h6" className={classes.title}>Bistro</Typography>
 					<Tabs>
-						<Tab label='Home' to='/' component={Link} />} />
-						<Tab label='Our Food' to='our-food' component={Link} />
-						<Tab label='Gallery' to='gallery' component={Link} />
-						<Tab label='Blog' to='blog' component={Link} />
-						<Tab label='Order Now' to='order' component={Link} />
-						<Tab label='Location' to='location' component={Link} />
+						<Tab className={classes.tab} label='Home' to='/' component={Link} />} />
+						<Tab className={classes.tab} label='Our Food' to='our-food' component={Link} />
+						<Tab className={classes.tab} label='Gallery' to='gallery' component={Link} />
+						<Tab className={classes.tab} label='Blog' to='blog' component={Link} />
+						<Tab className={classes.tab} label='Order Now' to='order' component={Link} />
+						<Tab className={classes.tab} label='Location' to='location' component={Link} />
 					</Tabs>
 			</Toolbar>
 			</AppBar>
