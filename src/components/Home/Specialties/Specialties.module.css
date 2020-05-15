@@ -1,6 +1,5 @@
 .container {
   background: #eee;
-  height: 40vh;
 }
 .center {
   text-align: center;
@@ -11,11 +10,13 @@
 }
 
 .box {
-  align-items: center;
+  display: inline-block;
+  text-align: center;
 }
 
 .title {
   text-transform: uppercase;
+  margin: 50px 0;
 }
 
 
