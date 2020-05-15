@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Nav.module.css'
 import { makeStyles } from '@material-ui/core/styles'
-import { Hidden, Tabs, Tab, AppBar, Toolbar, Typography, Button, IconButton, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList } from '@material-ui/core'
+import { Tabs, Tab, AppBar, Toolbar, Typography, IconButton, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
 import RestaurantIcon from '@material-ui/icons/Restaurant';
@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
 			color: 'red',
 			transition: 'color 0.2s ease-in-out',
 		},
+	},
+	toolbar: {
+		margin: '10px 0',
 	},
 	logo: {
 		marginRight: theme.spacing(1),
@@ -74,7 +77,7 @@ const Nav = () => {
 	return (
 		<div className={classes.root}>
 			<AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
-				<Toolbar>
+				<Toolbar className={classes.toolbar}>
 					<IconButton 
 						edge="start" 
 						className={classes.menuButton} 
