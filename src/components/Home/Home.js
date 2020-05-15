@@ -10,13 +10,19 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 		textTransform: 'uppercase',
 		marginTop: theme.spacing(4),
+		color: '#eee',
+		textShadow: '3px 3px #000',
 	},
 	caption2: {
 		textAlign: 'center',
 		textTransform: 'uppercase',
+		color: '#eee',
+		textShadow: '3px 3px #000',
 	},
 	caption3: {
 		textAlign: 'center',
+		color: '#eee',
+		textShadow: '3px 3px #000',
 	},
 	highlight: {
 		color: 'orange',
