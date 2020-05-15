@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Specialties.module.css'
 import { makeStyles } from '@material-ui/core/styles'
+import { Typography } from '@material-ui/core'
 import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
 import LocalBarIcon from '@material-ui/icons/LocalBar';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
@@ -25,28 +26,28 @@ const Specialties = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={`${styles.title} ${styles.center}`}>Our Specialties</h1>
-      <hr />
+      <Typography variant="h4" className={`${styles.title} ${styles.center}`}>Our Specialties</Typography>
+      <hr className={styles.line} />
       <div className={styles.boxes}>
         <div className={styles.box}>
           <FreeBreakfastIcon className={classes.icons} />
-          <h3 className={styles.center}>Breakfast</h3>
-          <p className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</p>
+          <Typography variant="h6" className={`${styles.categoryTitle} ${styles.center}`}>Breakfast</Typography>
+          <Typography paragraph className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</Typography>
         </div>
         <div className={styles.box}>
           <LocalBarIcon className={classes.icons} />
-          <h3 className={styles.center}>Dinner & Dessert</h3>
-          <p className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</p>
+          <Typography variant="h6" className={`${styles.categoryTitle} ${styles.center}`}>Dinner & Dessert</Typography>
+          <Typography paragraph className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</Typography>
         </div>
         <div className={styles.box}>
           <FastfoodIcon className={classes.icons} />
-          <h3 className={styles.center}>Ice Shakes</h3>
-          <p className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</p>
+          <Typography variant="h6" className={`${styles.categoryTitle} ${styles.center}`}>Ice Shakes</Typography>
+          <Typography paragraph className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</Typography>
         </div>
         <div className={styles.box}>
           <LocalDrinkIcon className={classes.icons} />
-          <h3 className={styles.center}>Beverages</h3>
-          <p className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</p>
+          <Typography variant="h6" className={`${styles.categoryTitle} ${styles.center}`}>Beverages</Typography>
+          <Typography paragraph className={styles.center}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque sunt. Nisi vel illum adipisci.</Typography>
         </div>
       </div>
     </div>
