@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Specialties.module.css'
 import { makeStyles } from '@material-ui/core/styles'
-
 import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
 import LocalBarIcon from '@material-ui/icons/LocalBar';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
@@ -11,7 +10,12 @@ import LocalDrinkIcon from '@material-ui/icons/LocalDrink';
 const useStyles = makeStyles((theme) => ({
   icons: {
     fontSize: '40px',
-  }
+    marginBottom: '20px',
+    color: '#fff',
+    backgroundColor: 'orange',
+    borderRadius: '50%',
+    padding: '10px',
+  },
 }));
 
 
@@ -22,6 +26,7 @@ const Specialties = () => {
   return (
     <div className={styles.container}>
       <h1 className={`${styles.title} ${styles.center}`}>Our Specialties</h1>
+      <hr />
       <div className={styles.boxes}>
         <div className={styles.box}>
           <FreeBreakfastIcon className={classes.icons} />
