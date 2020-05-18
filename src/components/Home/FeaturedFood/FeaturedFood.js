@@ -1,11 +1,13 @@
 import React from 'react'
-
+import styles from './FeaturedFood.module.css'
 
 const FeaturedFood = () => {
 
 
   return (
-    <h1>Featured Food</h1>
+    <div className={styles.container}>
+      <h1>Featured Food</h1>
+    </div>
   )
 }
 

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Button, Box } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import Specialties from './Specialties/Specialties'
+import FeaturedFood from './FeaturedFood/FeaturedFood'
 import styles from './Home.module.css'
 
 
@@ -57,6 +58,7 @@ const Home = () => {
 				<Button className={classes.ctaButton} variant="contained" color="secondary" to="order" component={Link}>Order Now</Button>
 			</Box>
 			<Specialties />
+			<FeaturedFood />
 		</div>
 	)
 }
