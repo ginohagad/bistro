@@ -28,7 +28,7 @@ const Specialties = () => {
     <div className={styles.container}>
       <Typography variant="h4" className={`${styles.title} ${styles.center}`}>Our Specialties</Typography>
       <hr className={styles.line} />
-      <div className={styles.boxes}>
+      <div className={`${styles.boxes} ${classes.noWrap}`}>
         <div className={styles.box}>
           <FreeBreakfastIcon className={classes.icons} />
           <Typography variant="h6" className={`${styles.categoryTitle} ${styles.center}`}>Breakfast</Typography>

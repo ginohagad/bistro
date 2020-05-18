@@ -80,7 +80,7 @@ const Nav = () => {
 				<Toolbar className={classes.toolbar}>
 					<IconButton 
 						edge="start" 
-						className={classes.menuButton} 
+						className={`${classes.menuButton} ${styles.menuButton}`}
 						color="inherit" 
 						aria-label="menu" 
 						ref={anchorRef} 
@@ -113,7 +113,7 @@ const Nav = () => {
 					</Popper>
 					<RestaurantIcon className={classes.logo} />
 					<Typography variant="h6" className={classes.title}>Bistro</Typography>
-					<Tabs>
+					<Tabs className={styles.tabs}>
 						<Tab className={classes.tab} label='Home' to='/' component={Link} />} />
 						<Tab className={classes.tab} label='Our Food' to='our-food' component={Link} />
 						<Tab className={classes.tab} label='Gallery' to='gallery' component={Link} />

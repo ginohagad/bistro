@@ -1,3 +1,11 @@
-@media (min-width: 480px) {
+@media (min-width: 800px) {
+  .menuButton {
+    display: none !important;
+  }
+}
 
+@media (max-width: 800px) {
+  .tabs {
+    display: none !important;
+  }
 }
