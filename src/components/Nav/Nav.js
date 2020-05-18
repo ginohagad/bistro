@@ -101,10 +101,7 @@ const Nav = () => {
 										<MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
 											<MenuItem onClick={handleClose} to='/' component={Link}>Home</MenuItem>
 											<MenuItem onClick={handleClose} to='our-food' component={Link}>Our Food</MenuItem>
-											<MenuItem onClick={handleClose}	to='gallery'component={Link}>Gallery</MenuItem>
-											<MenuItem onClick={handleClose}	to='blog' component={Link}>Blog</MenuItem>
 											<MenuItem onClick={handleClose}	to='order' component={Link}>Order Now</MenuItem>
-											<MenuItem onClick={handleClose}	to='location' component={Link}>Location</MenuItem>
 										</MenuList>
 									</ClickAwayListener>
 								</Paper>
@@ -116,10 +113,7 @@ const Nav = () => {
 					<Tabs className={styles.tabs}>
 						<Tab className={classes.tab} label='Home' to='/' component={Link} />} />
 						<Tab className={classes.tab} label='Our Food' to='our-food' component={Link} />
-						<Tab className={classes.tab} label='Gallery' to='gallery' component={Link} />
-						<Tab className={classes.tab} label='Blog' to='blog' component={Link} />
 						<Tab className={classes.tab} label='Order Now' to='order' component={Link} />
-						<Tab className={classes.tab} label='Location' to='location' component={Link} />
 					</Tabs>
 			</Toolbar>
 			</AppBar>

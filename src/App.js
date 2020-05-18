@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Nav, Home, OurFood, Gallery, Blog, Order, Location } from './components'
+import { Nav, Home, OurFood, Order } from './components'
 import Image from './img/background.jpg'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
@@ -21,17 +21,8 @@ class App extends Component {
 						<Route path="/our-food">
 							<OurFood />
 						</Route>
-						<Route path="/gallery">
-							<Gallery />
-						</Route>
-						<Route path="/blog">
-							<Blog />
-						</Route>
 						<Route path="/order">
 							<Order />
-						</Route>
-						<Route path="/location">
-							<Location />
 						</Route>
 					</Switch>
 				</div>
