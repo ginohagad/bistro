@@ -1,7 +1,10 @@
 .container {
-  background: turquoise;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background: #fff;
+  padding: 30px;
+}
+
+.card {
+  background: red !important;
 }
 
 .title {
@@ -13,4 +16,10 @@
 
 .line {
   margin: 0 auto;
+}
+
+@media(max-width: 958px) {
+  .title {
+    text-align: center;
+  }
 }

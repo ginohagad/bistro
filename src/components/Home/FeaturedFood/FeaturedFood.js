@@ -6,8 +6,12 @@ import styles from './FeaturedFood.module.css'
 
 
 const useStyles = makeStyles((theme) => ({
+  gridContainer: {
+    marginTop: '30px',
+  },
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -25,7 +29,7 @@ const FeaturedFood = () => {
     <div className={styles.container}>
       <Typography variant="h4" className={styles.title}>Featured Food</Typography>
       <hr className={styles.line} />
-      <Grid container spacing={24}>
+      <Grid container spacing={24} alignItems="center" justify="center" className={classes.gridContainer}>
         <Grid item md={3}>
           <Card className={classes.card}>
             <CardMedia
