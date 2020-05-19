@@ -24,9 +24,11 @@ const useStyles = makeStyles((theme) => ({
 		textShadow: '3px 3px #000',
 	},
 	caption3: {
+		margin: '0 auto',
 		textAlign: 'center',
 		color: '#eee',
 		textShadow: '3px 3px #000',
+		width: '70%',
 	},
 	highlight: {
 		color: 'orange',
@@ -52,7 +54,7 @@ const Home = () => {
 		<div className={styles.container}>
 			<Typography variant="h4" className={classes.caption1}>Delicious Bakery Items</Typography>
 			<Typography variant="h3" className={classes.caption2}>Coconut with <span className={classes.highlight}>lemon grass</span></Typography>
-			<Typography variant="h6" className={classes.caption3}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Voluptate facilis corrupti quidem quis.</Typography>
+			<Typography variant="h6" className={classes.caption3} >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, totam? Minus eius, earum ducimus quos, eaque et molestiae laudantium enim beatae unde a dolorem tempora in laboriosam nobis.</Typography>
 			<Box display="flex" justifyContent="center" m={2} className={classes.box}>
 				<Button className={classes.ctaButton} variant="contained" color="secondary">Learn More</Button>
 				<Button className={classes.ctaButton} variant="contained" color="secondary" to="order" component={Link}>Order Now</Button>

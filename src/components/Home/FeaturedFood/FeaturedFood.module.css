@@ -1,4 +1,16 @@
 .container {
   background: turquoise;
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  margin-bottom: 0;
+}
+
+.line {
+  margin: 0 auto;
 }
